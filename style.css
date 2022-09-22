@@ -18,6 +18,15 @@ h3 {
   font-size: 1rem;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
 .header {
   padding: 1.3rem;
   grid-column: 2 / 5;
@@ -29,14 +38,29 @@ h3 {
   z-index: 1;
 }
 
-.accountbar, .headerbuttons {
+.accountbar, .headerbuttons-container {
   justify-self: end;
 }
 
-.headerbuttons {
+.headerbuttons-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
+}
+
+.headerbuttons {
+  background: #10b981;
+  border-radius: 1rem;
+  padding: .4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-button {
+  border: none;
+  background: none;
 }
 
 .smalltext {
@@ -90,11 +114,11 @@ h3 {
   display: grid;
 }
 
-.project-title {
+.project-title, .account-name {
   margin-left: 10%;
 }
 
-.project-text {
+.project-text, .account-text {
   margin-left: 10%;
   margin-top: -10px;
   color: gray;
@@ -138,5 +162,4 @@ h3 {
 
 .account-name, .account-text {
   grid-column: 2 / 3;
-
 }
