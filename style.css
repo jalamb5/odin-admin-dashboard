@@ -124,9 +124,19 @@ h3 {
 }
 
 .profile-picture {
-  grid-column: 1 / 2;
+  grid-column: 1 / 2; /*rethink this*/
+  border-radius: 50%;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+.hero-profile-picture {
+  border-radius: 50%;
+  max-width: 4rem;
+  max-height: 4rem;
 }
 
 .account-name, .account-text {
   grid-column: 2 / 3;
+
 }
