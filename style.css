@@ -31,6 +31,10 @@ section {
   border-bottom: solid 2px lightgray;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   padding: 1.3rem;
   grid-column: 2 / 5;
@@ -44,6 +48,31 @@ section {
 
 .accountbar, .headerbuttons-container {
   justify-self: end;
+}
+
+.accountbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: black;
+}
+
+.searchbar {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  gap: 5px;
+}
+
+#search {
+  border-radius: 2rem;
+  background-color: rgb(238, 231, 231);
+  border: none;
+}
+
+input[type=search] {
+  min-width: 300%;
+  min-height: 2rem;
 }
 
 .headerbuttons-container {
@@ -60,11 +89,6 @@ section {
   padding-right: 1.5rem;
   color: white;
   font-size: 1rem;
-}
-
-.search-button {
-  border: none;
-  background: none;
 }
 
 .smalltext {
